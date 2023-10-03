@@ -30,3 +30,15 @@ Route::middleware([
 Route::get('/profile/show', function () {
     return view('profile.show');
 });
+
+
+//Vehiculo
+Route::get('vehiculo', \App\Livewire\Vehiculo::class)->name('vehiculo');
+//Mantenimientos
+Route::get('mantenimiento', \App\Livewire\Mantenimiento::class)->name('mantenimiento');
+//Pieza
+Route::get('pieza', \App\Livewire\Pieza::class)->name('pieza');
+
+Route::get('/mant/show', function () {
+    return view('cruds.crudmant');
+});

@@ -328,7 +328,7 @@ return [
         //Menu de Administrador
         [
             'text'        => 'Estadisticas',
-            'url'         => 'dash/crud',
+            'url'         => '/mant/show',
             'icon'        => 'fas fa-file-alt',
             'can'       => 'admins',
         ],
@@ -599,5 +599,5 @@ return [
     |
     */
 
-    'livewire' => false,
+    'livewire' => TRUE,
 ];
